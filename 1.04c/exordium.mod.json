@@ -1,0 +1,15 @@
+{
+  "title": "1.04c Diablo II",
+  "core": "1.04c",
+  "author": "Blizzard Entertainment",
+  "description": "Diablo II, patch 1.04c.",
+  "art": {
+    "banner": "banner.jpg",
+    "icon": "icon.png",
+    "portrait": "portrait.png"
+  },
+  "launch": {
+    "renderer": "ddraw",
+    "windowed": true
+  }
+}

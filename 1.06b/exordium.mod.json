@@ -1,0 +1,15 @@
+{
+  "title": "1.06b Diablo II",
+  "core": "1.06b",
+  "author": "Blizzard Entertainment",
+  "description": "Diablo II, patch 1.06b.",
+  "art": {
+    "banner": "banner.jpg",
+    "icon": "icon.png",
+    "portrait": "portrait.png"
+  },
+  "launch": {
+    "renderer": "ddraw",
+    "windowed": true
+  }
+}

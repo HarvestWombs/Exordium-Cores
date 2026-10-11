@@ -1,0 +1,15 @@
+{
+  "title": "1.09b LOD",
+  "core": "1.09b",
+  "author": "Blizzard Entertainment",
+  "description": "Diablo II: Lord of Destruction, patch 1.09b.",
+  "art": {
+    "banner": "banner.jpg",
+    "icon": "icon.png",
+    "portrait": "portrait.png"
+  },
+  "launch": {
+    "renderer": "ddraw",
+    "windowed": true
+  }
+}

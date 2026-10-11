@@ -1,0 +1,15 @@
+{
+  "title": "1.02 Diablo II",
+  "core": "1.02",
+  "author": "Blizzard Entertainment",
+  "description": "Diablo II, patch 1.02.",
+  "art": {
+    "banner": "banner.jpg",
+    "icon": "icon.png",
+    "portrait": "portrait.png"
+  },
+  "launch": {
+    "renderer": "ddraw",
+    "windowed": true
+  }
+}

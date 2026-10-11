@@ -1,0 +1,15 @@
+{
+  "title": "1.10f LOD",
+  "core": "1.10f",
+  "author": "Blizzard Entertainment",
+  "description": "Diablo II: Lord of Destruction, patch 1.10f.",
+  "art": {
+    "banner": "banner.jpg",
+    "icon": "icon.png",
+    "portrait": "portrait.png"
+  },
+  "launch": {
+    "renderer": "ddraw",
+    "windowed": true
+  }
+}

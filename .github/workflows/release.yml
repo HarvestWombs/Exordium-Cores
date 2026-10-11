@@ -1,0 +1,40 @@
+name: Release cores
+
+# A push that changes a core folder publishes a new release; Exordium reads the latest one's
+# cores.json (releases/latest/download/cores.json). Run it by hand from the Actions tab as well.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "[0-9]*/**"
+      - build.py
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build zips and catalog
+        run: |
+          TAG="cores-$(date -u +%Y.%m.%d)-${GITHUB_RUN_NUMBER}"
+          echo "TAG=$TAG" >> "$GITHUB_ENV"
+          python build.py "$TAG"
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$TAG" dist/* \
+            --title "Cores $TAG" \
+            --notes "Built from ${GITHUB_SHA::7}. Exordium reads cores.json from the latest release." \
+            --latest

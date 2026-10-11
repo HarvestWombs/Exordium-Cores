@@ -1,0 +1,15 @@
+{
+  "title": "1.05 Diablo II",
+  "core": "1.05",
+  "author": "Blizzard Entertainment",
+  "description": "Diablo II, patch 1.05.",
+  "art": {
+    "banner": "banner.jpg",
+    "icon": "icon.png",
+    "portrait": "portrait.png"
+  },
+  "launch": {
+    "renderer": "ddraw",
+    "windowed": true
+  }
+}
